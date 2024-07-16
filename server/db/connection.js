@@ -17,6 +17,6 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-let db = client.db("employees");
+let db = mongoose.db("employees");
 
 export default db;
