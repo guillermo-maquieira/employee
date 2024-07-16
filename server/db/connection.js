@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 const PORT = 8000;
 
 // MongoDB Connection
