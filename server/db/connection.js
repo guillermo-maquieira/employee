@@ -23,3 +23,7 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
+let db = client.db("employees");
+
+export default db;
