@@ -17,6 +17,13 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-let db = mongoose.db("employees");
 
+const employeeSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+  },
+});
+
+const db = mongoose.model("Employee", employeeSchema);
 export default db;
